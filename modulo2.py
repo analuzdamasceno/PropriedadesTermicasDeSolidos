@@ -1,8 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt 
-import warnings
-
-warnings.filterwarnings('ignore')
 
 #Definição das constantes
 kb = 1.380649e-23
@@ -12,26 +8,9 @@ hbar = 1.05457182e-34
 def densidade_debye(omega, v):
     return (3*(omega**2)/(2*(np.pi**2)*(v**3)))
 
-#calculando os valores de omega para o silicio
-arquivo_si = open('dadosSilicio.txt', 'r')
-omega_si = []
-
-for linha in arquivo_si: 
-    omega = linha.split()[0]
-    omega = omega.replace(",",'.')
-    omega = float(omega)
-    omega_si.append(omega)
-
-#omega_si.remove(0)
-
-v_si = 2200 
-
-
-temperaturas = np.linspace(0.01,1000,5000)
-
 
 #funcao da capacidade termica de debye
-def cv_debye(omega, TempLista, v, N, densidade_atomica):
+def cv_debye0(omega, TempLista, v, N, densidade_atomica):
     def densidade_estados(w, densidade_atomica, v):
         return (N/densidade_atomica*(w**2)/(2*(np.pi**2)*(v**3)))
     def f(w, temp,densidade_atomica,v):
@@ -48,7 +27,8 @@ def cv_debye(omega, TempLista, v, N, densidade_atomica):
         c_debye.append(cv(omega,temp))
     return c_debye
 
-def cv_debye2(omega, TempLista, v, N, densidade_atomica):
+#segunda versão da capacidade térmica de Debye, que será a utilizada pela eficiência
+def cv_debye(omega, TempLista, v, N, densidade_atomica):
     def f(x):
         return ((x**4)*np.exp(x)/(np.exp(x)-1)**2)
     c_debye = []
@@ -67,35 +47,3 @@ def cv_debye2(omega, TempLista, v, N, densidade_atomica):
     for temp in TempLista:
         c_debye.append(cv(omega,temp))
     return c_debye
-
-
-
-#para o silicio
-
-
-#para o GaN
-#omega
-
-arquivo_gan = open('dadosGaN.txt', 'r')
-omega_gan = []
-
-for linha in arquivo_gan: 
-    omega = linha.split()[0]
-    omega = omega.replace(",",'.')
-    omega = float(omega)
-    omega_gan.append(omega)
-
-#omega_gan.remove(0)
-
-v_gan = 6900
-
-
-#plt.plot(temperaturas, cv_debye_si)
-#plt.plot(temperaturas, cv_debye_gan)
-#plt.grid()
-#plt.show()
-
-
-
-#cv_debye_ta = cv_debye(omega_ta, temperaturas, v_ta, 6.02e23, 5.6e28)
-#plt.plot(temperaturas, cv_debye_ta)
