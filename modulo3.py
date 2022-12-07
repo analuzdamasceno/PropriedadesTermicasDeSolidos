@@ -1,12 +1,13 @@
-from extracaoDados import*
-import matplotlib.pyplot as plt
 import numpy as np
 
 #Definição das constantes
 kb = 1.380649e-23
 hbar = 1.05457182e-34
 
+#função para cáculo da capacidade térmica utilizando as densidades de estados experimentais
 def cv_densidade_experimental(omega, densidade_estados, tempLista, d_atomica):
+    #para obter em termos de 1 mol, que será o utilizado, dividimos a densidade de estados pela densidade atomica dividida por 1 mol,
+    #uma vez que os dados utilizados no projeto medem a densidade de estados para um metro cúbico de moléculas
     def f(w, temp,d_omega):
         return (d_omega/(d_atomica/6.02e23)*np.exp((hbar*w)/(kb*temp))*((hbar*w/temp)**2))/(kb*(np.exp((hbar*w)/(kb*temp))-1)**2)
     def cv(omega, densidade_estados, temp):
@@ -20,12 +21,3 @@ def cv_densidade_experimental(omega, densidade_estados, tempLista, d_atomica):
     for temp in tempLista:
         c_dados.append(cv(omega, densidade_estados, temp))
     return c_dados
-
-
-temperaturas = np.linspace(0.01, 1000, 5000)
-cv_dados_si = cv_densidade_experimental(omega_si, densidade_estados_si, temperaturas, 4.99e28)
-cv_dados_gan = cv_densidade_experimental(omega_gan, densidade_estados_gan, temperaturas, 4.28e28)
-#plt.plot(temperaturas, cv_dados_si)
-#plt.plot(temperaturas, cv_si_einstein, label = 'Silício Einstein')
-#plt.grid()
-#plt.show()
