@@ -17,7 +17,7 @@ omega_si_einstein = sum(omega_si)/len(omega_si)
 temperaturas = np.linspace(0.01,2000,10000)
 
 #calculando as capacidades térmicas para os diferentes modelos, sabendo que a 
-#velocidade do som no Silício é 2200 m/s (fonte: ) e que sua densidade atômica é
+#velocidade do som no Silício é 2200 m/s (fonte: https://periodictable.com/Properties/A/SoundSpeed.al.html) e que sua densidade atômica é
 #4.99e28 átomos/m³
 
 cv_si_einstein = cv_einstein(omega_si_einstein, 6.02e23, temperaturas)
