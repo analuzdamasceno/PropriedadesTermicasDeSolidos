@@ -32,5 +32,4 @@ Em que
   Neste módulo são utilizados dados experimentais de densidades de estado do sólido, $D(\omega)$, para cálculo da capacidade térmica: a função recebe a lista de frequências de oscilação dos fônons, a lista das densidades de estados correspondentes a cada frequência, a densidade atômica e a lista de temperaturas. A função foi criada com base nos dados que serão utilizados: considerando que a densidade de estados é dada para um metro cúbico do sólido.
   
     A equação base foi:
-    
-<h1 align="center"> $C = \int_{\omega_{0}}^{omega_{máx}}D(\omega)\dfrac{e^{\hbar\omega/(\k_{B}T)}}{(e^{\hbar\omega/(\k_{B}T)}-1)^{2}\dfrac{\hbar\omega}{T}}$ </h1>
+<h1 align="center"> $C = \int_{\omega_{0}}^{omega_{máx}}D(\omega)\dfrac{e^{\hbar\omega/(k_{B}T)}}{(e^{\hbar\omega/(k_{B}T)}-1)^{2}\dfrac{\hbar\omega}{T}}$ </h1>
