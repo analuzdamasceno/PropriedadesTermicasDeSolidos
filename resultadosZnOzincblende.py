@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 #mas o modulo lida normalmente com o calculo, logo podemos ignorar o aviso
 warnings.filterwarnings('ignore')
 
+#lendo os dados das frequências de vibração e densidades de estado do ZnO Zincblende
+arquivo_zno_zincblende = open("dadosZnO_zincblende.txt")
+omega_zno_zb = []
+densidade_estados_zno_zb = []
+ler_dados(omega_zno_zb, densidade_estados_zno_zb, arquivo_zno_zincblende)
+
 #calculando a média das frequências de vibração para utilizar no modelo de Einstein
 omega_zno_zb_einstein = sum(omega_zno_zb)/len(omega_zno_zb) 
 
