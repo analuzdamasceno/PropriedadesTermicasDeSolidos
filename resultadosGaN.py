@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 #mas o modulo lida normalmente com o calculo, logo podemos ignorar o aviso
 warnings.filterwarnings('ignore')
 
+#lendo os dados das frequências de vibração e densidades de estado do GaN
+arquivo_gan = open('dadosGaN.txt')
+omega_gan = []
+densidade_estados_gan = []
+ler_dados(omega_gan, densidade_estados_gan, arquivo_gan)
+
 #calculando a média das frequências de vibração para utilizar no modelo de Einstein
 omega_gan_einstein = sum(omega_gan)/len(omega_gan)
 
