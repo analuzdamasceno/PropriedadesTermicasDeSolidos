@@ -34,7 +34,7 @@ Em que
 
     A equação base foi:
     
-<h1 align="center"> $C = \int_{\omega_{0}}^{\omega_{máx}}D(\omega)\dfrac{e^{\hbar\omega/k_{B}T}}{(e^{\hbar\omega/k_{B}T}-1)^{2}}\dfrac{\hbar\omega}{T}$ </h1>
+<h1 align="center"> $C = \int_{\omega_{0}}^{\omega_{máx}}D(\omega)\dfrac{e^{\hbar\omega/k_{B}T}}{(e^{\hbar\omega/k_{B}T}-1)^{2}}\dfrac{\hbar\omega}{T}d\omega$ </h1>
 
 **modulo4.py**
 
