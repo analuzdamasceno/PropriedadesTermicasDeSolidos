@@ -5,5 +5,4 @@
   Teve-se como objetivo desenvolver módulos para calcular a capacidade e a condutividade térmica de sólidos e aplicar as funções desenvolivdas no cálculo dessas propriedades para alguns semicondutores.
 
   O trabalho encontra-se dividido em quatro módulos de contas:
-  
-    \textbf{modulo1.py}
+  ###modulo1.py
