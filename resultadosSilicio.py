@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 #mas o modulo lida normalmente com o calculo, logo podemos ignorar o aviso
 warnings.filterwarnings('ignore')
 
+#lendo os dados das frequências de vibração e densidades de estado do Silício
+arquivo_si = open('dadosSilicio.txt', 'r')
+omega_si = []
+densidade_estados_si = []
+ler_dados(omega_si, densidade_estados_si, arquivo_si)
+
 #calculando a média das frequências de vibração para utilizar no modelo de Einstein
 omega_si_einstein = sum(omega_si)/len(omega_si)
 
