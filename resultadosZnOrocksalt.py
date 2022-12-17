@@ -11,6 +11,12 @@ import matplotlib.pyplot as plt
 #mas o modulo lida normalmente com o calculo, logo podemos ignorar o aviso
 warnings.filterwarnings('ignore')
 
+#lendo os dados das frequências de vibração e densidades de estado do ZnO Rocksalt
+arquivo_zno_rocksalt = open("dadosZnO_rocksalt.txt")
+omega_zno_rs = []
+densidade_estados_zno_rs = []
+ler_dados(omega_zno_rs, densidade_estados_zno_rs, arquivo_zno_rocksalt)
+
 #calculando a média das frequências de vibração para utilizar no modelo de Einstein
 omega_zno_rs_einstein = sum(omega_zno_rs)/len(omega_zno_rs) 
 
