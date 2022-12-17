@@ -20,6 +20,7 @@
   Aqui, há uma função que calcula a capacidade térmica de um sólido com base no modelo de Debye. Ela recebe como parâmetros uma lista com as frequências de vibração dos fônons, a velocidade do som no sólido, o número de átomos da amostra, a densidade atômica do sólido e a lista de temperaturas para as quais a capacidade térmica será calculada. Os cálculos são realizados utilizando o método de integração numérica dos trapézios repetidos.
   
     As equações deste modelo são:
+    
 <h1 align="center"> $C = 3Nk_{B}(\dfrac{T}{\theta})^{3}\int_{x_{0}}^{x_{máx}}\dfrac{x^{4}e^{x}}{(e^{x}-1)^{2}}dx$ </h1>
 
 Em que
@@ -30,6 +31,13 @@ Em que
 **modulo3.py**
 
   Neste módulo são utilizados dados experimentais de densidades de estado do sólido, $D(\omega)$, para cálculo da capacidade térmica: a função recebe a lista de frequências de oscilação dos fônons, a lista das densidades de estados correspondentes a cada frequência, a densidade atômica e a lista de temperaturas. A função foi criada com base nos dados que serão utilizados: considerando que a densidade de estados é dada para um metro cúbico do sólido.
-  
+
     A equação base foi:
+    
 <h1 align="center"> $C = \int_{\omega_{0}}^{\omega_{máx}}D(\omega)\dfrac{e^{\hbar\omega/k_{B}T}}{(e^{\hbar\omega/k_{B}T}-1)^{2}}\dfrac{\hbar\omega}{T}$ </h1>
+
+**modulo4.py**
+
+  Aqui cria-se duas funções: uma para cálculo do $\tau$, tempo médio entre as colisões dos fônons, que recebe como parâmetros uma fequência de oscilação $\omega$, a temperatura, a velocidade do som no sólido e a densidade atômica; e uma segunda função de cálculo da condutividade térmica, que recebe como parâmetros uma lista das frequências de oscilação dos fônons, a velocidade do som no sólido, a densidade atômica e uma lista de temperaturas, e esta segunda função utiliza a primeira.
+  
+  
