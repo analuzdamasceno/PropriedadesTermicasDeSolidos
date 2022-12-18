@@ -51,4 +51,4 @@ Além destes quatro módulos, há também o módulo **extracaoDados.py**, em que
 
 Por meio dos módulos desenvolvidos, foi possível aplicá-los a diferentes sólidos, cujos arquivos contendo os dados estão no diretório e foram extraídos de [lampx.tugraz.at/~hadley/ss1/](http://lampx.tugraz.at/~hadley/ss1/). 
 
-Os resultados foram dispostos em aqruivos de extensão .ipynb para que fosse possível a visualização dos gráficos gerados no próprio arquivo. Foram obtidos resultados para o silício, para o nitreto de gálio, e para duas disposições estruturais diferentes do óxido de zinco: da forma rocksalt e da forma zincblende.
+Os resultados foram dispostos em aqruivos de extensão .ipynb para que fosse possível a visualização dos gráficos gerados no próprio arquivo. Foram obtidos resultados para o silício, para o nitreto de gálio, e para duas disposições estruturais diferentes do óxido de zinco: da forma rocksalt e da forma zincblende. Há também um arquivo que compara os resultados das condutividades térmicas de tais sólidos em um mesmo gráfico.
