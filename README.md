@@ -42,7 +42,7 @@
   <h3 align="center"> $\tau = (\tau_{pe}^{-1} + \tau_{v}^{-1})^{-1}$ </h3>
   <h3 align="center"> $\tau_{pe}^{-1} = A\omega^{2}$ </h3>
   <h3 align="center"> $\tau_{v}^{-1} = D\omega^{2}Te^{-(\theta/3T)}$ </h3>
-  <h3 align="center"> $k = \dfrac{k_{B}^{4}T^{3}}{2\pi^{2}v_{som}\hbar^{3}}\int_{\theta/T}^{0}\tau\dfrac{x^{4}e^{x}}{(e^{x}-1)^{2}}dx$ </h3>
+  <h3 align="center"> $k = \dfrac{k_{B}^{4}T^{3}}{2\pi^{2}v_{som}\hbar^{3}}\int_{0}^{\theta/T}\tau\dfrac{x^{4}e^{x}}{(e^{x}-1)^{2}}dx$ </h3>
   
   Em que $x$ é o mesmo citado anteriormente e $A$ e $D$ são constantes experimentais. No trabalho, como trata-se de um modelo simplificado, os valores utilizados para tais constantes foram: $A=2.2 * 10^{7}$ e $D=9.16 * 10^{4}$, extraídos do artigo "Thermal conductivity of the Kondo semiconductor
 CeRu4Sn6", publicado no Journal of Physics.
