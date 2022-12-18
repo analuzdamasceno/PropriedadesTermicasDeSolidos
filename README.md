@@ -44,7 +44,7 @@
   <h1 align="center"> $\tau = (\tau_{pe}^{-1} + \tau_{v}^{-1})^{-1}$ </h1>
   <h1 align="center"> $\tau_{pe}^{-1} = A\omega^{2}$ </h1>
   <h1 align="center"> $\tau_{v}^{-1} = D\omega^{2}Te^{-(\theta/3T)}$ </h1>
-  <h1 align="center"> $k = \dfrac{k_{B}^{4}T^{3}}{2\pi^{2}v_{som}\hbar^{3}}\int_{\theta/T}^{0}\tau\dfrac{x^{4}e^{x}}{(e^{x}-1)^{2}}dx$ </h1>
+  <h3 align="center"> $k = \dfrac{k_{B}^{4}T^{3}}{2\pi^{2}v_{som}\hbar^{3}}\int_{\theta/T}^{0}\tau\dfrac{x^{4}e^{x}}{(e^{x}-1)^{2}}dx$ </h3>
   
   
   
