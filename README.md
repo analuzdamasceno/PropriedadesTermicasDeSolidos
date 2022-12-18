@@ -12,8 +12,8 @@
   
   A equação para a capacidade térmica neste modelo é:
   
-  <h1 align="center"> $U = \dfrac{3N\hbar\omega_{0}}{e^{\hbar\omega_{0}/k_{B}T}-1}$ </h1>
-  <h1 align="center"> $C = \dfrac{\partial U}{\partial T}$ </h1>
+  <h3 align="center"> $U = \dfrac{3N\hbar\omega_{0}}{e^{\hbar\omega_{0}/k_{B}T}-1}$ </h3>
+  <h3 align="center"> $C = \dfrac{\partial U}{\partial T}$ </h3>
   
 **modulo2.py**
 
@@ -30,9 +30,7 @@
 
 **modulo3.py**
 
-  Neste módulo são utilizados dados experimentais de densidades de estado do sólido, $D(\omega)$, para cálculo da capacidade térmica: a função recebe a lista de frequências de oscilação dos fônons, a lista das densidades de estados correspondentes a cada frequência, a densidade atômica e a lista de temperaturas. A função foi criada com base nos dados que serão utilizados: considerando que a densidade de estados é dada para um metro cúbico do sólido.
-
-    A equação base foi:
+  Neste módulo são utilizados dados experimentais de densidades de estado do sólido, $D(\omega)$, para cálculo da capacidade térmica: a função recebe a lista de frequências de oscilação dos fônons, a lista das densidades de estados correspondentes a cada frequência, a densidade atômica e a lista de temperaturas. A função foi criada com base nos dados que serão utilizados: considerando que a densidade de estados é dada para um metro cúbico do sólido. A equação base foi:
     
   <h3 align="center"> $C = \int_{\omega_{0}}^{\omega_{máx}}D(\omega)\dfrac{e^{\hbar\omega/k_{B}T}}{(e^{\hbar\omega/k_{B}T}-1)^{2}}\dfrac{\hbar\omega}{T}d\omega$ </h3>
 
@@ -46,7 +44,12 @@
   <h3 align="center"> $\tau_{v}^{-1} = D\omega^{2}Te^{-(\theta/3T)}$ </h3>
   <h3 align="center"> $k = \dfrac{k_{B}^{4}T^{3}}{2\pi^{2}v_{som}\hbar^{3}}\int_{\theta/T}^{0}\tau\dfrac{x^{4}e^{x}}{(e^{x}-1)^{2}}dx$ </h3>
   
-  Em que $x$ é o mesmo citado anteriormente e $A$ e $D$ são constantes experimentais. No trabalho, como trata-se de um modelo simplificado, os valores utilizados para tais constantes foram: $A=2.2 x 10^{7}$ e $D=9.16 x 10^{4}$, extraídos do artigo "Thermal conductivity of the Kondo semiconductor
+  Em que $x$ é o mesmo citado anteriormente e $A$ e $D$ são constantes experimentais. No trabalho, como trata-se de um modelo simplificado, os valores utilizados para tais constantes foram: $A=2.2 * 10^{7}$ e $D=9.16 * 10^{4}$, extraídos do artigo "Thermal conductivity of the Kondo semiconductor
 CeRu4Sn6", publicado no Journal of Physics.
-  
-  
+
+
+Além destes quatro módulos, há também o módulo **extracaoDados.py**, em que define-se uma função para a leitura dos dados das frequências de oscilação e das densidades de estados, considerando arquivos de duas colunas, em que cada uma responde à respectiva grandeza.
+
+Por meio dos módulos desenvolvidos, foi possível aplicá-los a diferentes sólidos, cujos arquivos contendo os dados estão no diretório e foram extraídos de [lampx.tugraz.at/~hadley/ss1/](http://lampx.tugraz.at/~hadley/ss1/). 
+
+
