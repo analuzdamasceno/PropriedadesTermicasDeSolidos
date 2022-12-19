@@ -16,9 +16,9 @@ def densidade_debye(omega, v, densidade_atomica):
             d_debye.append(0)
     return d_debye
 
-#função da capacidade térmica Debye: retorna uma lista com as capacidades térmicas calculadas
-# com base no modelo de Debye para uma dada lista de temperaturas, uma lista com as frequências
-# omega, a velocidade do som no sólido, o número N de átomos e a densidade atômica do sólido.
+'''função da capacidade térmica Debye: retorna uma lista com as capacidades térmicas calculadas
+com base no modelo de Debye para uma dada lista de temperaturas, uma lista com as frequências
+omega, a velocidade do som no sólido, o número N de átomos e a densidade atômica do sólido.'''
 def cv_debye(omega, TempLista, v, N, densidade_atomica):
     #funçao a ser integrada numericamente para cada omega
     def f(x):
