@@ -26,6 +26,8 @@
 
   <h3 align="center"> $x = \dfrac{\hbar\omega}{k_{B}T}$ </h3>
   <h3 align="center"> $\theta = \dfrac{\hbar v_{som}}{k_{B}}(6\pi^{2}\rho_{atom})^{1/3}$ </h3>
+  
+  Documentação: [modulo1.html](file:///C:/Users/analu/Documents/UFMG/F%C3%ADsica/2%C2%B0%20per%C3%ADodo/Introdu%C3%A7%C3%A3o%20%C3%A0%20Computa%C3%A7%C3%A3o%20em%20F%C3%ADsica/projeto/documentacao/html/modulo1.html)
 
 **modulo3.py**
 
