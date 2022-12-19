@@ -6,14 +6,15 @@ import matplotlib.pyplot as plt
 kb = 1.380649e-23
 hbar = 1.05457182e-34
 
-
+#função para calcular o tempo entre as colisões entre fônons
 def tau(w, temp, v, densidade_atomica):
-    theta = hbar*v*((6*densidade_atomica/(np.pi))**(1/3))/(2*kb)
-    tau_pe = 2.2e7 * (w**2)
-    tau_v = 9.16e4 * (w**2) * temp * np.exp(-theta/(3*temp))
+    theta = hbar*v*((6*densidade_atomica/(np.pi))**(1/3))/(2*kb) #temperatura de Debye
+    tau_pe = 2.2e7 * (w**2) #fator relacionado ao espalhamento por causa dos elétrons
+    tau_v = 9.16e4 * (w**2) * temp * np.exp(-theta/(3*temp)) #fator relacionado a colisão entre fônons, os chamados processos Umklapp
     t = ( tau_pe + tau_v)**(-1)
     return t 
 
+#função para calcular a condutividade térmica
 def condutiv(omega, tempLista, v, densidade_atomica):
     def f(x, w, temp):
         return (tau(w, temp, v, densidade_atomica)*(x**4)*np.exp(x)/(np.exp(x)-1)**2)
