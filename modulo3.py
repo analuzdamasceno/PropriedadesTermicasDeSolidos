@@ -14,7 +14,8 @@ def cv_densidade_experimental(omega, densidade_estados, tempLista, d_atomica):
     grandeza será calculada e a densidade atômica do solo, retornando uma lista com as capacidades 
     térmicas para cada temperatura.'''
     def f(w, temp,d_omega):
-        #função que será integrada para cada valor de omega e de densidade de estados correspondente
+        '''função que será integrada para cada valor de omega e de densidade de estados correspondente,
+        considerando que os dados experimentais de densidade de estados são para um metro cúbico do sólido.'''
         return (d_omega/(d_atomica/6.02e23)*np.exp((hbar*w)/(kb*temp))*((hbar*w/temp)**2))/(kb*(np.exp((hbar*w)/(kb*temp))-1)**2)
     def cv(omega, densidade_estados, temp):
         '''Função de cálculo da capacidade térmica para as listas de frequência e de densidades de estado 
