@@ -54,4 +54,4 @@ Por meio dos módulos desenvolvidos, foi possível aplicá-los a diferentes sól
 
 Os resultados foram dispostos em aqruivos de extensão .ipynb para que fosse possível a visualização dos gráficos gerados no próprio arquivo. Foram obtidos resultados para o silício, para o nitreto de gálio, e para duas disposições estruturais diferentes do óxido de zinco: da forma rocksalt e da forma zincblende. Há também um arquivo que compara os resultados das condutividades térmicas de tais sólidos em um mesmo gráfico.
 
-No diretório está também a pasta de nome "Documentação", na qual estão contidos os html com as documentações dos módulos descritos anteriormente.
+No diretório estão também a pasta de nome "Documentação", na qual estão contidos os html com as documentações dos módulos descritos anteriormente, e a pasta "Metodologia e Análise", em que está um arquivo pdf com uma breve análise dos sólidos utilizados e dos resultados obtidos e o arquivo do "Software Design Document", que propõe a ideia original por trás do projeto e contém a metodologia teórica utilizada de maneira mais detalhada. 
