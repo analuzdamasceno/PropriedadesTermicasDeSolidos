@@ -4,7 +4,7 @@
 
   Teve-se como objetivo desenvolver módulos para calcular a capacidade e a condutividade térmica de sólidos e aplicar as funções desenvolivdas no cálculo dessas propriedades para alguns semicondutores.
 
-  O trabalho encontra-se dividido em quatro módulos de contas:
+  O trabalho encontra-se dividido em quatro módulos de contas e utiliza as bibliotecas Numpy e Matplotlib.pyplot do Python:
   
 **modulo1.py**
 
